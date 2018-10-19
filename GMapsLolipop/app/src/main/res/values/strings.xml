@@ -19,5 +19,6 @@
     <string name="title_search">Search</string>
     <string name="title_addTrip">Add trip</string>
     <string name="title_profile">Profile</string>
+    <string name="trekker">Trekker</string>
 
 </resources>
