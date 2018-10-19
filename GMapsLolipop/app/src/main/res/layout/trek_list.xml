@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:layout_marginTop="5dp"
+    android:background="#FFF"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/trekNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trek Name : "
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/trekNameView"
+            android:text=""
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/trekDurationView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="5dp"
+            android:text="Trek Duration : "
+            android:textSize="20sp"
+            />
+
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/trekDurationView"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/trekCityView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duration"
+            android:layout_marginTop="5dp"
+            android:text="Trek City : "
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/duration"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/trekCityView"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/trekIdealView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/city"
+            android:layout_marginTop="5dp"
+            android:text="Ideal Season : "
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/recommendation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/city"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/trekIdealView"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#d9e0e2"
+            />
+</RelativeLayout>

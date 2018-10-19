@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addTrip">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <EditText
+                android:id="@+id/trekNameEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Trek Name"/>
+            <EditText
+                android:id="@+id/trekDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Trek Duration"/>
+            <EditText
+                android:id="@+id/trekCityNear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nearest City"/>
+            <EditText
+                android:id="@+id/recommendationTrek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Recommendation"/>
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_margin="20dp"
+                tools:context=".MapsActivity" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
